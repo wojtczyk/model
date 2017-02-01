@@ -1,0 +1,372 @@
+#VRML V2.0 utf8
+
+Group
+{
+	children
+	[
+		DEF westWall Shape
+		{
+			appearance Appearance
+			{
+				material Material
+				{
+					ambientIntensity 0.625
+					diffuseColor 0.8 0.8 0.8
+					specularColor 0.13 0.13 0.13
+					shininess 0.13
+				}
+				texture ImageTexture
+				{
+					url "west.jpg"
+				}
+			}
+
+			geometry IndexedFaceSet
+			{
+				coord Coordinate
+				{
+					point[0 0 0, 0 7.470 0, 0 7.470 3, 0 0 3] 
+				}
+				coordIndex[0 1 2 3]
+
+				texCoord TextureCoordinate
+				{
+					point[0 0, 1 0, 1 1, 0 1] 
+				}
+				texCoordIndex[0 1 2 3]
+			}
+		}
+
+		DEF northWall Shape
+		{
+			appearance Appearance
+			{
+				material Material
+				{
+					ambientIntensity 0.625
+					diffuseColor 0.8 0.8 0.8
+					specularColor 0.13 0.13 0.13
+					shininess 0.13
+				}
+				texture ImageTexture
+				{
+					url "north.jpg"
+				}
+			}
+
+			geometry IndexedFaceSet
+			{
+				coord Coordinate
+				{
+					point[0 7.470 0, 7.350 7.470 0, 7.350 7.470 3, 0 7.470 3] 
+				}
+				coordIndex[0 1 2 3]
+
+				texCoord TextureCoordinate
+				{
+					point[0 0, 1 0, 1 1, 0 1] 
+				}
+				texCoordIndex[0 1 2 3]
+			}
+		}
+
+		DEF eastWall Shape
+		{
+			appearance Appearance
+			{
+				material Material
+				{
+					ambientIntensity 0.625
+					diffuseColor 0.8 0.8 0.8
+					specularColor 0.13 0.13 0.13
+					shininess 0.13
+				}
+				texture ImageTexture
+				{
+					url "east.jpg"
+				}
+			}
+
+			geometry IndexedFaceSet
+			{
+				coord Coordinate
+				{
+					point[7.350 7.470 0, 7.350 0.215 0, 7.350 0.215 3, 7.350 7.470 3] 
+				}
+				coordIndex[0 1 2 3]
+
+				texCoord TextureCoordinate
+				{
+					point[0 0, 1 0, 1 1, 0 1] 
+				}
+				texCoordIndex[0 1 2 3]
+			}
+		}
+
+		DEF southWall Shape
+		{
+			appearance Appearance
+			{
+				material Material
+				{
+					ambientIntensity 0.625
+					diffuseColor 0.8 0.8 0.8
+					specularColor 0.13 0.13 0.13
+					shininess 0.13
+				}
+				texture ImageTexture
+				{
+					url "south.jpg"
+				}
+			}
+
+			geometry IndexedFaceSet
+			{
+				coord Coordinate
+				{
+					point[6.225 0 0, 0 0 0, 0 0 3, 6.225 0 3] 
+				}
+				coordIndex[0 1 2 3]
+
+				texCoord TextureCoordinate
+				{
+					point[0 0, 1 0, 1 1, 0 1] 
+				}
+				texCoordIndex[0 1 2 3]
+			}
+		}
+
+		DEF sink_wall_south Shape
+		{
+			appearance Appearance
+			{
+				material Material
+				{
+					ambientIntensity 0.625
+					diffuseColor 0.8 0.8 0.8
+					specularColor 0.13 0.13 0.13
+					shininess 0.13
+				}
+				texture ImageTexture
+				{
+					url "sink_wall_south.jpg"
+				}
+			}
+
+			geometry IndexedFaceSet
+			{
+				coord Coordinate
+				{
+					point[6.225 0.215 0, 6.225 0.215 3, 7.350 0.215 3, 7.350 0.215 0]
+				}
+				coordIndex[0 1 2 3]
+
+				texCoord TextureCoordinate
+				{
+					point[0 0, 1 0, 1 1, 0 1] 
+				}
+				texCoordIndex[1 2 3 0]
+			}
+		}
+
+		DEF sink_wall_east Shape
+		{
+			appearance Appearance
+			{
+				material Material
+				{
+					ambientIntensity 0.625
+					diffuseColor 0.8 0.8 0.8
+					specularColor 0.13 0.13 0.13
+					shininess 0.13
+				}
+				texture ImageTexture
+				{
+					url "sink_wall_east.jpg"
+				}
+			}
+
+			geometry IndexedFaceSet
+			{
+				coord Coordinate
+				{
+					point[6.225 0 0, 6.225 0 3, 6.225 0.215 3, 6.225 0.215 0]
+				}
+				coordIndex[0 1 2 3]
+
+				texCoord TextureCoordinate
+				{
+					point[0 0, 1 0, 1 1, 0 1] 
+				}
+				texCoordIndex[1 2 3 0]
+			}
+		}
+
+		DEF floor Shape
+		{
+			appearance Appearance
+			{
+				material Material
+				{
+					ambientIntensity 0.1
+					diffuseColor 0.28 0.42 0.50
+					specularColor 0.13 0.13 0.13
+					shininess 0.13
+				}
+				texture ImageTexture
+				{
+					url "floor_blue.jpg"
+					repeatS TRUE
+					repeatT TRUE
+				}
+			}
+
+			geometry IndexedFaceSet
+			{
+				coord Coordinate
+				{
+					point[0 0 0, 7.350 0 0, 7.350 7.470 0, 0 7.470 0] 
+				}
+				coordIndex[0 1 2 3]
+				
+				texCoord TextureCoordinate
+				{
+					point[0 0, 1 0, 1 1, 0 1] 
+				}
+				texCoordIndex[0 1 2 3]
+				
+			}
+		}
+
+		DEF ceiling Shape
+		{
+			appearance Appearance
+			{
+				material Material
+				{
+					ambientIntensity 0.625
+					diffuseColor 0.8 0.8 0.8
+					specularColor 0.13 0.13 0.13
+					shininess 0.13
+				}
+			}
+
+			geometry IndexedFaceSet
+			{
+				coord Coordinate
+				{
+					point[0 0 3, 7.350 0 3, 7.350 7.470 3, 0 7.470 3] 
+				}
+				coordIndex[0 3 2 1]
+			}
+		}
+		
+		DEF trsf_northeast_table Transform
+		{
+			translation 6.35 6.61 0
+			
+			children
+			[
+				Inline
+				{
+					url "table.wrl"
+				}
+			]
+		}
+
+		DEF trsf_northwest_table Transform
+		{
+			translation 2.03 6.21 0
+			rotation 0 0 1 -1.570796327
+			
+			children
+			[
+				Inline
+				{
+					url "table_drawer.wrl"
+				}
+			]
+		}
+
+		DEF trsf_north_table Transform
+		{
+			translation 4.16 6.21 0
+			rotation 0 0 1 1.570796327
+			
+			children
+			[
+				Inline
+				{
+					url "table_drawer.wrl"
+				}
+			]
+		}
+
+		DEF trsf_south_table Transform
+		{
+			translation 1.7 0.4 0
+			rotation 0 0 1 3.141592653
+			
+			children
+			[
+				Inline
+				{
+					url "table_drawer.wrl"
+				}
+			]
+		}
+
+		DEF trsf_atknoll58_keyboard Transform
+		{
+			translation 1.83 6.21 0.749
+			
+			children
+			[
+				Inline
+				{
+					url "atknoll58_keyboard.wrl"
+				}
+			]
+		}
+
+		DEF trsf_atknoll58_tower Transform
+		{
+			translation 2.20 5.5275 0.9415
+			
+			children
+			[
+				Inline
+				{
+					url "atknoll58_tower.wrl"
+				}
+	
+			]
+		}
+
+		DEF trsf_atknoll58_screen Transform
+		{
+			translation 2.33 6.21 1.0
+			
+			children
+			[
+				Inline
+				{
+					url "atknoll58_screen.wrl"
+				}
+			]
+		}
+		
+		DEF trsf_loisl_power_supply Transform
+		{
+			translation 0.1375 6.0375 0.265
+			
+			children
+			[
+				Inline
+				{
+					url "leonardo2_powersupply.wrl"
+				}
+			]
+		}
+	]
+}

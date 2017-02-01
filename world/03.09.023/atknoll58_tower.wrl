@@ -1,0 +1,189 @@
+#VRML V2.0 utf8
+#TODO
+Transform
+{
+	translation 0 0 0
+	
+	children
+	[
+		DEF atknoll58_right Shape
+		{
+			appearance Appearance
+			{
+				texture ImageTexture
+				{
+					url "atknoll58_tower_right.jpg"
+				}
+				
+			}
+			geometry IndexedFaceSet
+			{
+				coord Coordinate
+				{
+					point
+					[
+						-0.21 -0.0975 -0.22,
+						 0.21 -0.0975 -0.22,
+						 0.21 -0.0975  0.22,
+						-0.21 -0.0975  0.22
+					]
+				}
+				coordIndex [0 1 2 3]
+
+				texCoord TextureCoordinate
+				{
+					point[0 0, 1 0, 1 1, 0 1] 
+				}
+				texCoordIndex[0 1 2 3]
+			}
+		}
+
+		DEF atknoll58_left Shape
+		{
+			appearance Appearance
+			{
+				texture ImageTexture
+				{
+					url "atknoll58_tower_left.jpg"
+				}
+				
+			}
+			geometry IndexedFaceSet
+			{
+				coord Coordinate
+				{
+					point
+					[
+						-0.21  0.0975 -0.22,
+						 0.21  0.0975 -0.22,
+						 0.21  0.0975  0.22,
+						-0.21  0.0975  0.22
+					]
+				}
+				coordIndex [1 0 3 2]
+
+				texCoord TextureCoordinate
+				{
+					point[0 0, 1 0, 1 1, 0 1] 
+				}
+				texCoordIndex[0 1 2 3]
+			}
+		}
+
+		DEF atknoll58_front Shape
+		{
+			appearance Appearance
+			{
+				texture ImageTexture
+				{
+					url "atknoll58_tower_front.jpg"
+				}
+				
+			}
+			geometry IndexedFaceSet
+			{
+				coord Coordinate
+				{
+					point
+					[
+						-0.21 -0.0975 -0.22,
+						-0.21 -0.0975  0.22,
+						-0.21  0.0975  0.22,
+						-0.21  0.0975 -0.22
+					]
+				}
+				coordIndex [0 1 2 3]
+
+				texCoord TextureCoordinate
+				{
+					point[0 0, 1 0, 1 1, 0 1] 
+				}
+				texCoordIndex[ 1 2 3 0]
+			}
+		}
+
+		DEF atknoll58_back Shape
+		{
+			appearance Appearance
+			{
+				texture ImageTexture
+				{
+					url "atknoll58_tower_back.jpg"
+				}
+				
+			}
+			geometry IndexedFaceSet
+			{
+				coord Coordinate
+				{
+					point
+					[
+						 0.21 -0.0975 -0.22,
+						 0.21 -0.0975  0.22,
+						 0.21  0.0975  0.22,
+						 0.21  0.0975 -0.22
+					]
+				}
+				coordIndex [1 0 3 2]
+
+				texCoord TextureCoordinate
+				{
+					point[0 0, 1 0, 1 1, 0 1] 
+				}
+				texCoordIndex[3 0 1 2]
+			}
+		}
+
+		DEF atknoll58_top Shape
+		{
+			appearance Appearance
+			{
+				texture ImageTexture
+				{
+					url "atknoll58_metal_texture.jpg"
+				}
+				
+			}
+			geometry IndexedFaceSet
+			{
+				coord Coordinate
+				{
+					point
+					[
+						-0.21 -0.0975  0.22,
+						 0.21 -0.0975  0.22,
+						 0.21  0.0975  0.22,
+						-0.21  0.0975  0.22
+					]
+				}
+				coordIndex [0 1 2 3]
+			}
+		}
+
+		DEF atknoll58_bottom Shape
+		{
+			appearance Appearance
+			{
+				texture ImageTexture
+				{
+					url "atknoll58_metal_texture.jpg"
+				}
+				
+			}
+			geometry IndexedFaceSet
+			{
+				coord Coordinate
+				{
+					point
+					[
+						-0.21 -0.0975 -0.22,
+						 0.21 -0.0975 -0.22,
+						 0.21  0.0975 -0.22,
+						-0.21  0.0975 -0.22
+					]
+				}
+				coordIndex [1 0 3 2]
+			}
+		}
+	]
+}

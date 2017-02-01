@@ -1,0 +1,63 @@
+#VRML V2.0 utf8
+
+Group
+{
+	children
+	[
+
+		Inline {
+			url [pa_0_s1.wrl]
+			bboxCenter 0 0 0
+			bboxSize -1 -1 -1
+		}
+
+		Inline {
+			url [pa_s1_s2.wrl]
+			bboxCenter 0 0 0
+			bboxSize -1 -1 -1
+		}
+
+
+		Transform
+		{
+			#translation 7.40 6.855 1.5
+			rotation 0 1 0 1.570796327
+			
+			children
+			[
+		Inline {
+			url [pa_s2_e1.wrl]
+			bboxCenter 0 0 0
+			bboxSize -1 -1 -1
+		}
+
+		Inline {
+			url [pa_e1_e2.wrl]
+			bboxCenter 0 0 0
+			bboxSize -1 -1 -1
+		}
+
+		Inline {
+			url [pa_e2_w1.wrl]
+			bboxCenter 0 0 0
+			bboxSize -1 -1 -1
+		}
+
+		Inline {
+			url [pa_w1_w2.wrl]
+			bboxCenter 0 0 0
+			bboxSize -1 -1 -1
+		}
+
+		Inline {
+			url [pa_w2_top.wrl]
+			bboxCenter 0 0 0
+			bboxSize -1 -1 -1
+		}
+
+
+			]
+		}
+
+	]
+}

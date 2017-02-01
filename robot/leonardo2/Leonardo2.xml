@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot wrl="Leonardo2.wrl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="robot.xsd">
+	<prismatic name="X">
+		<axis x="1.0" y="0.0" z="0.0"/>
+		<center x="0.0" y="0.0" z="0.0"/>
+		<limits min="-10000.0" max="10000.0"/>
+	</prismatic>
+	<prismatic name="Y">
+		<axis x="0.0" y="1.0" z="0.0"/>
+		<center x="0.0" y="0.0" z="0.0"/>
+		<limits min="-10000.0" max="10000.0"/>
+	</prismatic>
+	<revolute name="Rotate">
+		<axis x="0.0" y="0.0" z="1.0"/>
+		<center x="0.0" y="0.0" z="0.0"/>
+		<limits min="-180.0" max="180.0"/>
+	</revolute>
+<!--
+	<revolute name="S1">
+		<axis x="-1.0" y="0.0" z="0.0"/>
+		<center x="930.0" y="0.0" z="1320.0"/>
+		<limits min="-350.0" max="350.0"/>
+	</revolute>
+-->
+</robot>
